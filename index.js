@@ -20,6 +20,10 @@ app.use(
 );
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+    console.log("connection route");
+});
+
 app.use("/", clientRoute);
 
 const PORT = 8002;
